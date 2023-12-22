@@ -1,5 +1,5 @@
 import React from 'react'
-import { HiArrowRightCircle } from "react-icons/hi2";
+// import { HiArrowRightCircle } from "react-icons/hi2";
 
 const Home = () => {
   return (

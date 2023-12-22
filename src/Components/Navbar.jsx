@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaTimes, FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
+import { FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { GiCryoChamber } from "react-icons/gi";
 import { CiMenuKebab } from "react-icons/ci";
