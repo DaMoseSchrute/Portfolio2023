@@ -1,46 +1,22 @@
-# Portfolio2023
-Jacob Riggs coding portfolio
-react project
-
-fonts:
-style={{fontFamily: 'var(--font-family)'}} = Nunito
-style={{fontFamily: 'var(--font-familyR)'}} = Rubik
-
-index.css
-:root {
-  --primary-color: #2b7efc;
-  --accent-color: #fd7a3d;
-  --background-color: #2B3A42;
-  --neutral-color: #EFEFEF;
-  --font-family: 'Nunito', sans-serif;
-  --font-familyR: 'Rubik', sans-serif;
-}
-
 import React, { useState } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaHamburger,
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaTimes, FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
+import { HiMail } from "react-icons/hi";
+import { GiCryoChamber } from "react-icons/gi";
 import { CiMenuKebab } from "react-icons/ci";
-import logo from "../Assets/JR-logo.png";
+import logo from "../Assets/JR-logo-C.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-
   const handleClick = () => {
     setNav(!nav);
   };
-
   return (
     <div
-      className="fixed w-full h-[85px] flex justify-between items-center px-2 bg-primary text-neutral font-bold"
+      className=" fixed w-full h-[85px] flex justify-between items-center px-2 bg-primary text-neutral font-bold border-b border-solid border-accent"
       style={{ fontFamily: "var(--font-family)" }}
     >
       <div>
-        <img src={logo} alt="my logo" style={{ width: "150px" }} />
+        <img src={logo} alt="my logo" style={{ width: "75px" }} />
       </div>
 
       {/* menu for navbar */}
@@ -68,7 +44,6 @@ const Navbar = () => {
           />
         )}
       </div>
-
       {/* mobile menu */}
       <ul
         className={
@@ -84,32 +59,58 @@ const Navbar = () => {
         <li className="py-5 text-3xl">Work</li>
         <li className="py-5 text-3xl">Contact</li>
       </ul>
-
       {/* social icons */}
-      <div className={`flex fixed flex-row px-5 bottom-2 transition-all ${nav ? 'opacity-100' : 'opacity-0'}`}>
-        <ul className="flex gap-2">
+      <div className="flex fixed flex-row bottom-2 ">
+        <ul className="flex gap-1 mb-[-45px]">
           <li
-            className="w-[150px] h-[60px] flex justify-between items-center "
+            className="social-icon"
             style={{ backgroundColor: "var(--background-color)" }}
           >
             <a
-              className="flex w-full flex-col justify-between items-center gap-1 hover:mb-[10px] duration-300 px-2 mb-[-75px]"
+              className="flex w-full flex-col justify-between items-center gap-1 text-accent"
               href="/"
             >
-              <FaLinkedin size={25} />
+              <FaLinkedin size={30} style={{ color: "var(--accent-color)" }} />
               LinkedIn
             </a>
           </li>
           <li
-            className="w-[150px] h-[60px] flex justify-between items-center "
+            className="social-icon"
+            style={{ backgroundColor: "var(--accent-color)" }}
+          >
+            <a
+              className="flex w-full flex-col justify-between items-center gap-1 text-background"
+              href="/"
+            >
+              <FaGithub
+                size={30}
+                style={{ color: "var(--background-color)" }}
+              />
+              GitHub
+            </a>
+          </li>
+          <li
+            className="social-icon"
+            style={{ backgroundColor: "var(--neutral-color)" }}
+          >
+            <a
+              className="flex w-full flex-col justify-between items-center gap-1  text-background"
+              href="/"
+            >
+              <HiMail size={30} style={{ color: "var(--background-color)" }} />
+              Email
+            </a>
+          </li>
+          <li
+            className="social-icon"
             style={{ backgroundColor: "var(--background-color)" }}
           >
             <a
-              className="flex w-full flex-col justify-between items-center gap-1 hover:mb-[10px] duration-300 px-2 mb-[-75px]"
+              className="flex w-full flex-col justify-between items-center gap-1 "
               href="/"
             >
-              <FaGithub size={25} />
-              GitHub
+              <GiCryoChamber size={30} />
+              Resumé
             </a>
           </li>
         </ul>
