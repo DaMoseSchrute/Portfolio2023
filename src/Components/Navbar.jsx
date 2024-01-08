@@ -21,15 +21,15 @@ const Navbar = () => {
 
       {/* menu for navbar */}
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li className="hover:text-accent">Home</li>
+        <li className="hover:text-accent">About</li>
+        <li className="hover:text-accent">Skills</li>
+        <li className="hover:text-accent">Work</li>
+        <li className="hover:text-accent">Contact</li>
       </ul>
 
       {/* Hamburger Dot Menu */}
-      <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
+      <div onClick={handleClick} className="md:hidden z-10 cursor-pointer ">
         {!nav ? (
           <CiMenuKebab
             style={{ color: "var(--accent-color)", fontSize: "4em" }}
@@ -53,24 +53,24 @@ const Navbar = () => {
         }
         style={{ backgroundColor: "var(--primary-color)" }}
       >
-        <li className="py-5 text-3xl">Home</li>
-        <li className="py-5 text-3xl">About</li>
-        <li className="py-5 text-3xl">Skills</li>
-        <li className="py-5 text-3xl">Work</li>
-        <li className="py-5 text-3xl">Contact</li>
+        <li className="py-5 text-3xl hover:text-accent">Home</li>
+        <li className="py-5 text-3xl hover:text-accent">About</li>
+        <li className="py-5 text-3xl hover:text-accent">Skills</li>
+        <li className="py-5 text-3xl hover:text-accent">Work</li>
+        <li className="py-5 text-3xl hover:text-accent">Contact</li>
       </ul>
       {/* social icons */}
-      <div className="flex fixed flex-row bottom-2 ">
+      <div className="hidden md:flex fixed flex-row bottom-2 ">
         <ul className="flex gap-1 mb-[-45px]">
           <li
             className="social-icon"
             style={{ backgroundColor: "var(--background-color)" }}
           >
             <a
-              className="flex w-full flex-col justify-between items-center gap-1 text-accent"
+              className="flex w-full flex-col justify-between items-center gap-1 text-neutral"
               href="/"
             >
-              <FaLinkedin size={30} style={{ color: "var(--accent-color)" }} />
+              <FaLinkedin size={30} style={{ color: "var(--neutral-color)" }} />
               LinkedIn
             </a>
           </li>
@@ -79,13 +79,10 @@ const Navbar = () => {
             style={{ backgroundColor: "var(--accent-color)" }}
           >
             <a
-              className="flex w-full flex-col justify-between items-center gap-1 text-background"
+              className="flex w-full flex-col justify-between items-center gap-1 text-primary"
               href="/"
             >
-              <FaGithub
-                size={30}
-                style={{ color: "var(--background-color)" }}
-              />
+              <FaGithub size={30} style={{ color: "var(--primary-color)" }} />
               GitHub
             </a>
           </li>
@@ -94,10 +91,10 @@ const Navbar = () => {
             style={{ backgroundColor: "var(--neutral-color)" }}
           >
             <a
-              className="flex w-full flex-col justify-between items-center gap-1  text-background"
+              className="flex w-full flex-col justify-between items-center gap-1  text-primary"
               href="/"
             >
-              <HiMail size={30} style={{ color: "var(--background-color)" }} />
+              <HiMail size={30} style={{ color: "var(--primary-color)" }} />
               Email
             </a>
           </li>

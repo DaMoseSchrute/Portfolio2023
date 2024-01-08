@@ -6,19 +6,17 @@
   --primary-color: #000000;
   --accent-color: #0cc0df;
   --background-color: #545454;
-  --neutral-color: #EFEFEF;
-  --font-family: 'Nunito', sans-serif;
-  --font-familyR: 'Rubik', sans-serif;
+  --secondary-color: #858585;
+  --neutral-color: #efefef;
+  --font-family: "Nunito", sans-serif;
+  --font-familyR: "Rubik", sans-serif;
 }
 
 @layer base {
-
-    li {
-        @apply px-5;
-        @apply cursor-pointer;
-        
-    }
-
+  li {
+    @apply px-5;
+    @apply cursor-pointer;
+  }
 }
 
 .social-icon {
@@ -34,4 +32,3 @@
   transform: translateY(-20px);
   margin-bottom: 20px;
 }
-
