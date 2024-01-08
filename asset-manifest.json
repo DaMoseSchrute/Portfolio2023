@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a8a5d07.css",
-    "main.js": "/static/js/main.cbc6f93c.js",
+    "main.css": "/static/css/main.f2614dae.css",
+    "main.js": "/static/js/main.b5c54f7d.js",
+    "static/media/Jacob-RemBG.png": "/static/media/Jacob-RemBG.0f5bae2fc8214fcb55da.png",
     "index.html": "/index.html",
-    "main.0a8a5d07.css.map": "/static/css/main.0a8a5d07.css.map",
-    "main.cbc6f93c.js.map": "/static/js/main.cbc6f93c.js.map"
+    "main.f2614dae.css.map": "/static/css/main.f2614dae.css.map",
+    "main.b5c54f7d.js.map": "/static/js/main.b5c54f7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a8a5d07.css",
-    "static/js/main.cbc6f93c.js"
+    "static/css/main.f2614dae.css",
+    "static/js/main.b5c54f7d.js"
   ]
 }
