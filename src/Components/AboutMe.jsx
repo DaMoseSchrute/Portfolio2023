@@ -21,14 +21,14 @@ function AboutMe(props) {
           <div className="text-center">
             <p className="text-4xl sm:text-5xl text-accent">About Me</p>
           </div>
-          <div className="max-w-[1000px] w-full mx-au grid grid-cols-2 gap-">
+          <div className="max-w-[1000px] w-full mx-au grid sm:grid-cols-2 gap-6">
             <div
-              className="text-right font-bold text-3xl sm:text-4xl px-4"
+              className="text-right font-bold text-3xl sm:text-4xl"
               style={{ color: "var(--secondary-color)" }}
             >
               <p>
                 Hello and Welcome to my portfolio. Please take a look around and
-                thank you for being here.
+                thank you for being here. Sincerely - Jacob
               </p>
             </div>
             <div className="text-lg">
